@@ -1,1 +1,1 @@
-# Data Scaping of medium.com
+# Data Scraping of medium.com
