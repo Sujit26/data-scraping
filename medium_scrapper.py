@@ -6,7 +6,8 @@ class BrickSetSpider(scrapy.Spider):
     base_url = 'https://medium.com/tag/'
 
     def start_requests(self):
-        search_query = 'sql'
+        search_query = 'flutter'
+        # search_query = 'data-science'
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
         }
@@ -16,13 +17,17 @@ class BrickSetSpider(scrapy.Spider):
             callback=self.parse
         )
 
-
     def parse(self, response: HtmlResponse):
         SET_SELECTOR = '.streamItem'
         for article in response.css(SET_SELECTOR):
             data = article.css('a ::text').extract()
             read_time = article.css(
                 'span.readingTime ::attr(title)').extract_first()
+
+            blog_link = article.css("div.postArticle-readMore a::attr(href)")[-1]
+            # <div class="postArticle-readMore"><a class="button button--smaller button--chromeless u-baseColor--buttonNormal" href="https://medium.com/better-programming/how-to-choose-the-right-database-for-your-app-c9b29ae0b8ae?source=---------0-----------------------" data-action="open-post" data-action-source="---------0-----------------------" data-action-value="https://medium.com/better-programming/how-to-choose-the-right-database-for-your-app-c9b29ae0b8ae?source=---------0-----------------------" data-post-id="c9b29ae0b8ae">Read more…</a></div>
+
+            print("\n"*5)
             nor = data[-1]
             # if nor.lower()._contains_('read'):
             #     nor = '0 responses'
@@ -32,6 +37,7 @@ class BrickSetSpider(scrapy.Spider):
                 'title': data[3],
                 'short_desciption': data[4],
                 'responses': nor,
-                'read_time': read_time
+                'read_time': read_time,
+                "blog_link": blog_link
             }
             yield formatted_data
