@@ -47,7 +47,8 @@ function App() {
       </form>
       {/* <h5>You can search blogs by tag</h5> */}
       {/* <CardTemplate /> */}
-
+      <br/>
+  
       <BlogItemList blogList={BlogList} />
     </div>
   );

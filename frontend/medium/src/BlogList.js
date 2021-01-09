@@ -5,15 +5,17 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+
+import Grid from "@material-ui/core/Grid";
 // import CardActionArea from "@material-ui/core/CardActionArea";
 // import CardMedia from "@material-ui/core/CardMedia";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345*2,
+    maxWidth: 345 * 2,
   },
   media: {
-    height: 140*2,
+    height: 140 * 2,
   },
 });
 
@@ -22,52 +24,57 @@ const BlogItemList = ({ blogList = [] }) => {
     console.log(blogList);
   }, []);
 
-
   const classes = useStyles();
-
 
   return (
     <>
       {blogList.map((data, index) => {
         if (data) {
           return (
-              <div>
-            <Card className={classes.root}>
-              <CardActions>
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    {data.title}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    {data.short_desciption}
-                  </Typography>
+            <Grid
+              key={index}
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing = {5}
+            >
+              <Grid item>
+                <Card className={classes.root}>
+                  <CardActions>
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="h2">
+                        {data.title}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        component="p"
+                      >
+                        {data.short_desciption}
+                      </Typography>
 
-                  <Typography
-                    variant="body1"
-                    color="black"
-                    component="p"
-                  >
-                    {"-by "+ data.name}
-                  </Typography>
-                </CardContent>
-              </CardActions>
-              <CardActions >
-                <h5 size="small" >
-                  {data.responses}
-                </h5>
-                <h5 size="small" color="primary">
-                  {data.read_time}
-                </h5>
-                <Button size="small" color="primary" >
-                  read more
-                </Button>
-              </CardActions>
-            </Card>
-            </div>
+                      <Typography
+                        variant="body1"
+                        // color="black"
+                        component="p"
+                      >
+                        {"-by " + data.name}
+                      </Typography>
+                    </CardContent>
+                  </CardActions>
+                  <CardActions>
+                    <h5 size="small">{data.responses}</h5>
+                    <h5 size="small" color="primary">
+                      {data.read_time}
+                    </h5>
+                    <Button size="small" color="primary">
+                      read more
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Grid>
           );
         }
         return null;
