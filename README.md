@@ -20,3 +20,6 @@ Clone the project
 ## For Frontend
   cd frontend/medium  
   npm start   
+
+
+![plot](UI.png)
