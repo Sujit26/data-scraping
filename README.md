@@ -3,20 +3,20 @@
 
 Command to run:
 Clone the project
-## activate virtual environment
+## Activate virtual environment
 
   python3 -m venv env  
   source env/bin/activate  
   
-## install requinments
+## Install requinments
   cd backend  
   pip3 install -r requirements.txt  
 
-## for backend
+## For Backend
   cd backend/  
   python3 manage.py runserver  
   
   
-## for frontend
+## For Frontend
   cd frontend/medium  
   npm start   
