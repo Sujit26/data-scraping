@@ -7,14 +7,17 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 import Grid from "@material-ui/core/Grid";
-// import CardActionArea from "@material-ui/core/CardActionArea";
-// import CardMedia from "@material-ui/core/CardMedia";
 
+// styling the card
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345 * 2,
+    width: '60vw',
+    height: 140 * 2,
+    transitionDuration: '0.3s',
+    alignSelf: true
   },
   media: {
+    width: '60vw',
     height: 140 * 2,
   },
 });
@@ -37,10 +40,12 @@ const BlogItemList = ({ blogList = [] }) => {
               direction="row"
               justify="center"
               alignItems="center"
-              spacing = {5}
+              spacing={5}
             >
               <Grid item>
-                <Card className={classes.root}>
+                <Card
+                  className={classes.root}
+                >
                   <CardActions>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="h2">
@@ -53,7 +58,8 @@ const BlogItemList = ({ blogList = [] }) => {
                       >
                         {data.short_desciption}
                       </Typography>
-
+                      <br />
+                      <br />
                       <Typography
                         variant="body1"
                         // color="black"
@@ -83,47 +89,3 @@ const BlogItemList = ({ blogList = [] }) => {
   );
 };
 export default BlogItemList;
-
-// function CardTemplate() {
-//   const classes = useStyles();
-//   return (
-//     <Card className={classes.root}>
-//       <CardActions>
-//         <CardMedia
-//           className={classes.media}
-//           image="/static/images/cards/contemplative-reptile.jpg"
-//           title="Contemplative Reptile"
-//         />
-//         <CardContent>
-//           <Typography gutterBottom variant="h5" component="h2">
-//             Lizard
-//           </Typography>
-//           <Typography variant="body2" color="textSecondary" component="p">
-//             Lizards are a widespread group of squamate reptiles, with over 6,000
-//             species, ranging across all continents except Antarctica
-//           </Typography>
-//         </CardContent>
-//       </CardActions>
-//       <CardActions disableSpacingA >
-//         <Button size="small" color="primary">
-//           Share
-//         </Button>
-//         <Button size="small" color="primary">
-//           Learn More
-//         </Button>
-//       </CardActions>
-//     </Card>
-//   );
-//   // return (
-//   //   <Card style={{ width: "18rem" }} className="mb-2">
-//   //     <Card.Header>Title</Card.Header>
-//   //     <Card.Body>
-//   //       <Card.Title> Card Title </Card.Title>
-//   //       <Card.Text>
-//   //         Some quick example text to build on the card title and make up the
-//   //         bulk of the card's content.
-//   //       </Card.Text>
-//   //     </Card.Body>
-//   //   </Card>
-//   // );
-// }
