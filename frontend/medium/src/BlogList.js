@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     width: '60vw',
     height: 140 * 2,
     transitionDuration: '0.3s',
-    alignSelf: true
+    alignSelf: true,
   },
   media: {
     width: '60vw',
