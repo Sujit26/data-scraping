@@ -22,4 +22,6 @@ Clone the project
   npm start   
 
 
-![plot](UI.png)
+<p align="center">
+  <img src="UI.png"  title="hover text">
+</p>
