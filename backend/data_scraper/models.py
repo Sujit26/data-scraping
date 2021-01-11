@@ -10,12 +10,14 @@ class Tag(models.Model):
 
 
 class Blog(models.Model):
-    name = models.CharField(max_length=150)
-    date = models.CharField(max_length=150)
-    title = models.CharField(max_length=150)
-    short_desciption = models.CharField(max_length=150)
-    responses = models.CharField(max_length=150)
-    read_time = models.CharField(max_length=150)   
+    name = models.CharField(max_length=150,blank=True ,null=True)
+    date = models.CharField(max_length=150,blank=True ,null=True)
+    title = models.CharField(max_length=150,unique=True)
+    short_desciption = models.CharField(max_length=150,blank=True ,null=True)
+    responses = models.CharField(max_length=150,blank=True ,null=True)
+    read_time = models.CharField(max_length=150,blank=True ,null=True)
+    tag = models.CharField(max_length=150,default="blog")
+
 
     def __str__(self):
         return self.title

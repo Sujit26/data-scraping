@@ -10,6 +10,7 @@ from itemadapter import ItemAdapter
 class MediumTeamPipeline(object):
       def process_item(self, item, spider):
           item.save()
+          print("saving..")
           return item
 
 # class ScraperPipeline:

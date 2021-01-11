@@ -1,0 +1,79 @@
+2021-01-10 22:08:32 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scrapy_app)
+2021-01-10 22:08:32 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (default, Aug 26 2020, 02:26:20) - [Clang 11.0.0 (clang-1100.0.33.17)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform macOS-10.15.2-x86_64-i386-64bit
+2021-01-10 22:08:32 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2021-01-10 22:08:32 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2021-01-10 22:08:32 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_app',
+ 'LOG_FILE': 'logs/default/icrawler/5ed4a24a539011eb8ba9d0817accd828.log',
+ 'NEWSPIDER_MODULE': 'scrapy_app.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scrapy_app.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; '
+               '+http://www.google.com/bot.html)'}
+2021-01-10 22:08:32 [scrapy.extensions.telnet] INFO: Telnet Password: fda7a7219b506573
+2021-01-10 22:08:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-10 22:08:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-10 22:08:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-10 22:08:32 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2021-01-10 22:08:32 [scrapy.core.engine] INFO: Spider opened
+2021-01-10 22:08:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-10 22:08:32 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-10 22:08:33 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://medium.com/robots.txt> (referer: None)
+2021-01-10 22:08:33 [protego] DEBUG: Rule at line 15 without any user agent to enforce it on.
+2021-01-10 22:08:33 [protego] DEBUG: Rule at line 66 without any user agent to enforce it on.
+2021-01-10 22:08:33 [protego] DEBUG: Rule at line 68 without any user agent to enforce it on.
+2021-01-10 22:08:33 [protego] DEBUG: Rule at line 69 without any user agent to enforce it on.
+2021-01-10 22:08:33 [protego] DEBUG: Rule at line 70 without any user agent to enforce it on.
+2021-01-10 22:08:33 [protego] DEBUG: Rule at line 71 without any user agent to enforce it on.
+2021-01-10 22:08:33 [protego] DEBUG: Rule at line 72 without any user agent to enforce it on.
+2021-01-10 22:08:33 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://medium.com/tag/database> (referer: None)
+2021-01-10 22:08:33 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://medium.com/tag/database>: HTTP status code is not handled or not allowed
+2021-01-10 22:08:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-10 22:08:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 642,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 4526,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/403': 2,
+ 'elapsed_time_seconds': 0.366234,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 10, 22, 8, 33, 336920),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'log_count/DEBUG': 9,
+ 'log_count/INFO': 11,
+ 'memusage/max': 68345856,
+ 'memusage/startup': 68345856,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/403': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 1, 10, 22, 8, 32, 970686)}
+2021-01-10 22:08:33 [scrapy.core.engine] INFO: Spider closed (finished)

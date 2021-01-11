@@ -20,10 +20,10 @@ from django.conf.urls import url
 # from ..data_scraper import views
 
 
-from mediumScrapper.data_scraper import views
+from data_scraper import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # url("tag/",views.BlogApiView.as_view()),
     path(r"tag/<slug:tag>", views.BlogApiView.as_view())
 ] 

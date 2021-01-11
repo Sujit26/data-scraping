@@ -6,7 +6,7 @@
 import scrapy
 
 from scrapy_djangoitem import DjangoItem
-from mediumScrapper.data_scraper.models import Blog
+from data_scraper.models import Blog
 
 class BlogItem(DjangoItem):
     django_model = Blog 

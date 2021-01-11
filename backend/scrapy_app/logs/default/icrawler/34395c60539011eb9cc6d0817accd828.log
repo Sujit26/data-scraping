@@ -1,0 +1,156 @@
+2021-01-10 22:07:26 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scrapy_app)
+2021-01-10 22:07:26 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (default, Aug 26 2020, 02:26:20) - [Clang 11.0.0 (clang-1100.0.33.17)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform macOS-10.15.2-x86_64-i386-64bit
+2021-01-10 22:07:26 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2021-01-10 22:07:26 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2021-01-10 22:07:26 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_app',
+ 'LOG_FILE': 'logs/default/icrawler/34395c60539011eb9cc6d0817accd828.log',
+ 'NEWSPIDER_MODULE': 'scrapy_app.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scrapy_app.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; '
+               '+http://www.google.com/bot.html)'}
+2021-01-10 22:07:26 [scrapy.extensions.telnet] INFO: Telnet Password: b6d7dd839af2974a
+2021-01-10 22:07:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-10 22:07:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-10 22:07:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-10 22:07:27 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2021-01-10 22:07:27 [scrapy.core.engine] INFO: Spider opened
+2021-01-10 22:07:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-10 22:07:27 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-10 22:07:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.google.com/robots.txt> from <GET https://google.com/robots.txt>
+2021-01-10 22:07:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.google.com/> from <GET https://google.com>
+2021-01-10 22:07:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/> (referer: None)
+2021-01-10 22:07:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.google.co.in': <GET https://www.google.co.in/webhp?tab=ww>
+2021-01-10 22:07:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'maps.google.co.in': <GET https://maps.google.co.in/maps?hl=en&tab=wl>
+2021-01-10 22:07:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.youtube.com': <GET https://www.youtube.com/?gl=IN&tab=w1>
+2021-01-10 22:07:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'translate.google.co.in': <GET https://translate.google.co.in/?hl=en&tab=wT>
+2021-01-10 22:07:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'books.google.co.in': <GET https://books.google.co.in/?hl=en&tab=wp>
+2021-01-10 22:07:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.blogger.com': <GET https://www.blogger.com/?tab=wj>
+2021-01-10 22:07:28 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCAk>
+2021-01-10 22:07:28 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCAg>
+2021-01-10 22:07:28 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCAc>
+2021-01-10 22:07:28 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCAY>
+2021-01-10 22:07:28 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCAU>
+2021-01-10 22:07:28 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/preferences?hl=en>
+2021-01-10 22:07:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://calendar.google.com/calendar?tab=wc> from <GET https://www.google.com/calendar?tab=wc>
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/advanced_search?hl=en-IN&authuser=0> (referer: https://www.google.com/)
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mail.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://mail.google.com/mail/?tab=wm>
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://accounts.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://play.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.google.com/topstories?tab=wn&hl=en-IN&gl=IN&ceid=IN:en> from <GET https://news.google.com/?tab=wn>
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/intl/en/policies/terms/> (referer: https://www.google.com/)
+2021-01-10 22:07:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com/advanced_search?hl=en-IN&authuser=0>
+{'url': 'https://www.google.com/advanced_search?hl=en-IN&authuser=0'}
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://docs.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://drive.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://drive.google.com/?tab=wo>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCA0>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCAw>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCAs>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_GWxc94jtF-Dyv6NBhz5_ICbAonk%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwi2hOKesJLuAhV79nMBHSB8BF8Q2ZgBCAo>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://play.google.com/store?hl=en&tab=w8> from <GET https://play.google.com/?hl=en&tab=w8>
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://calendar.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://calendar.google.com/calendar?tab=wc>
+2021-01-10 22:07:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/intl/en/policies/privacy/> (referer: https://www.google.com/)
+2021-01-10 22:07:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com/intl/en/policies/terms/>
+{'url': 'https://www.google.com/intl/en/policies/terms/'}
+2021-01-10 22:07:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com/intl/en/policies/privacy/>
+{'url': 'https://www.google.com/intl/en/policies/privacy/'}
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.google.com/intl/en/about/> from <GET https://www.google.com/intl/en/about.html>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://ads.google.com/intl/en/home/> from <GET https://www.google.com/intl/en/ads/>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.google.co.in/> from <GET https://www.google.com/setprefdomain?prefdom=IN&prev=https://www.google.co.in/&sig=K_d6p3doq49OftIMDocrRXgVDsWUs%3D>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://docs.google.com/document/create?usp=docs_alc> from <GET https://docs.google.com/document/?usp=docs_alc>
+2021-01-10 22:07:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://about.google/intl/en/> from <GET https://www.google.com/intl/en/about/>
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.google.com/topstories?tab=wn&hl=en-IN&gl=IN&ceid=IN:en> (referer: https://www.google.com/)
+2021-01-10 22:07:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com%2F&rip=1&nojavascript=1&hl=en> from <GET https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ>
+2021-01-10 22:07:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.google.com/topstories?tab=wn&hl=en-IN&gl=IN&ceid=IN:en>
+{'url': 'https://news.google.com/topstories?tab=wn&hl=en-IN&gl=IN&ceid=IN:en'}
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://play.google.com/store?hl=en&tab=w8> (referer: https://www.google.com/)
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ads.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.co.in/robots.txt> (referer: None)
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com%2F&rip=1&nojavascript=1&hl=en> (referer: https://www.google.com/)
+2021-01-10 22:07:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://play.google.com/store?hl=en&tab=w8>
+{'url': 'https://play.google.com/store?hl=en&tab=w8'}
+2021-01-10 22:07:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/document/create?usp%3Ddocs_alc&followup=https://docs.google.com/document/create?usp%3Ddocs_alc&ltmpl=docs> from <GET https://docs.google.com/document/create?usp=docs_alc>
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://about.google/robots.txt> (referer: None)
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ads.google.com/intl/en/home/> (referer: https://www.google.com/)
+2021-01-10 22:07:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com%2F&rip=1&nojavascript=1&hl=en>
+{'url': 'https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com%2F&rip=1&nojavascript=1&hl=en'}
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://about.google/intl/en/> (referer: https://www.google.com/)
+2021-01-10 22:07:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ads.google.com/intl/en/home/>
+{'url': 'https://ads.google.com/intl/en/home/'}
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.co.in/> (referer: https://www.google.com/)
+2021-01-10 22:07:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://about.google/intl/en/>
+{'url': 'https://about.google/intl/en/'}
+2021-01-10 22:07:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.co.in/>
+{'url': 'https://www.google.co.in/'}
+2021-01-10 22:07:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://photos.google.com/robots.txt> (referer: None)
+2021-01-10 22:07:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&rip=1&nojavascript=1&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&service=wise&ltmpl=docs> from <GET https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/document/create?usp%3Ddocs_alc&followup=https://docs.google.com/document/create?usp%3Ddocs_alc&ltmpl=docs>
+2021-01-10 22:07:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.google.com/photos/about/> from <GET https://photos.google.com/?tab=wq&pageId=none>
+2021-01-10 22:07:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/photos/about/> (referer: https://www.google.com/)
+2021-01-10 22:07:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&rip=1&nojavascript=1&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&service=wise&ltmpl=docs> (referer: https://www.google.com/)
+2021-01-10 22:07:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com/photos/about/>
+{'url': 'https://www.google.com/photos/about/'}
+2021-01-10 22:07:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&rip=1&nojavascript=1&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&service=wise&ltmpl=docs>
+{'url': 'https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&rip=1&nojavascript=1&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&service=wise&ltmpl=docs'}
+2021-01-10 22:07:31 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-10 22:07:31 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 13,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 13,
+ 'downloader/request_bytes': 18324,
+ 'downloader/request_count': 39,
+ 'downloader/request_method_count/GET': 39,
+ 'downloader/response_bytes': 1643453,
+ 'downloader/response_count': 39,
+ 'downloader/response_status_count/200': 27,
+ 'downloader/response_status_count/301': 6,
+ 'downloader/response_status_count/302': 6,
+ 'elapsed_time_seconds': 4.142546,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 10, 22, 7, 31, 207331),
+ 'item_scraped_count': 11,
+ 'log_count/DEBUG': 69,
+ 'log_count/INFO': 10,
+ 'memusage/max': 68308992,
+ 'memusage/startup': 68308992,
+ 'offsite/domains': 6,
+ 'offsite/filtered': 12,
+ 'request_depth_max': 1,
+ 'response_received_count': 25,
+ 'robotstxt/forbidden': 13,
+ 'robotstxt/request_count': 13,
+ 'robotstxt/response_count': 13,
+ 'robotstxt/response_status_count/200': 13,
+ 'scheduler/dequeued': 38,
+ 'scheduler/dequeued/memory': 38,
+ 'scheduler/enqueued': 38,
+ 'scheduler/enqueued/memory': 38,
+ 'start_time': datetime.datetime(2021, 1, 10, 22, 7, 27, 64785)}
+2021-01-10 22:07:31 [scrapy.core.engine] INFO: Spider closed (finished)

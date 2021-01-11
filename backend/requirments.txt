@@ -73,3 +73,8 @@ urllib3==1.26.2
 virtualenv==20.1.0
 w3lib==1.22.0
 zope.interface==5.2.0
+python-scrapyd-api==2.1.2
+requests==2.18.4
+Scrapy==1.5.1
+scrapy-djangoitem==1.1.1
+scrapyd==1.2.0

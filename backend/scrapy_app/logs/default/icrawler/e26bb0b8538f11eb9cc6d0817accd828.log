@@ -1,0 +1,233 @@
+2021-01-10 22:05:02 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scrapy_app)
+2021-01-10 22:05:02 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (default, Aug 26 2020, 02:26:20) - [Clang 11.0.0 (clang-1100.0.33.17)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform macOS-10.15.2-x86_64-i386-64bit
+2021-01-10 22:05:02 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2021-01-10 22:05:02 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2021-01-10 22:05:02 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_app',
+ 'LOG_FILE': 'logs/default/icrawler/e26bb0b8538f11eb9cc6d0817accd828.log',
+ 'NEWSPIDER_MODULE': 'scrapy_app.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scrapy_app.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; '
+               '+http://www.google.com/bot.html)'}
+2021-01-10 22:05:03 [scrapy.extensions.telnet] INFO: Telnet Password: 75162d484473afb8
+2021-01-10 22:05:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-10 22:05:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-10 22:05:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-10 22:05:03 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2021-01-10 22:05:03 [scrapy.core.engine] INFO: Spider opened
+2021-01-10 22:05:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-10 22:05:03 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-10 22:05:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.google.com/robots.txt> from <GET https://google.com/robots.txt>
+2021-01-10 22:05:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.google.com/> from <GET https://google.com>
+2021-01-10 22:05:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/> (referer: None)
+2021-01-10 22:05:04 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.google.co.in': <GET https://www.google.co.in/webhp?tab=ww>
+2021-01-10 22:05:04 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'maps.google.co.in': <GET https://maps.google.co.in/maps?hl=en&tab=wl>
+2021-01-10 22:05:04 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.youtube.com': <GET https://www.youtube.com/?gl=IN&tab=w1>
+2021-01-10 22:05:04 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'translate.google.co.in': <GET https://translate.google.co.in/?hl=en&tab=wT>
+2021-01-10 22:05:04 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'books.google.co.in': <GET https://books.google.co.in/?hl=en&tab=wp>
+2021-01-10 22:05:04 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.blogger.com': <GET https://www.blogger.com/?tab=wj>
+2021-01-10 22:05:04 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCAk>
+2021-01-10 22:05:04 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCAg>
+2021-01-10 22:05:04 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCAc>
+2021-01-10 22:05:04 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCAY>
+2021-01-10 22:05:04 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCAU>
+2021-01-10 22:05:04 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/preferences?hl=en>
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://accounts.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://play.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mail.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://mail.google.com/mail/?tab=wm>
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://play.google.com/store?hl=en&tab=w8> from <GET https://play.google.com/?hl=en&tab=w8>
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.google.com/topstories?tab=wn&hl=en-IN&gl=IN&ceid=IN:en> from <GET https://news.google.com/?tab=wn>
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/advanced_search?hl=en-IN&authuser=0> (referer: https://www.google.com/)
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCA0>
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCAw>
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCAs>
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.google.com/setprefs?sig=0_gD04G1SVnPNqPJl8BtKr7OtfwbU%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwib-MHar5LuAhUo6nMBHZHqCmoQ2ZgBCAo>
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://ads.google.com/intl/en/home/> from <GET https://www.google.com/intl/en/ads/>
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.google.com/intl/en/about/> from <GET https://www.google.com/intl/en/about.html>
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://docs.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://drive.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://drive.google.com/?tab=wo>
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/intl/en/policies/privacy/> (referer: https://www.google.com/)
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/intl/en/policies/terms/> (referer: https://www.google.com/)
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://about.google/intl/en/> from <GET https://www.google.com/intl/en/about/>
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.google.co.in/> from <GET https://www.google.com/setprefdomain?prefdom=IN&prev=https://www.google.co.in/&sig=K_u7VixijLRiLFP2JDbWHLfesa-Iw%3D>
+2021-01-10 22:05:05 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://www.google.com/advanced_search?hl=en-IN&authuser=0'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:05 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://www.google.com/intl/en/policies/privacy/'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:05 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://www.google.com/intl/en/policies/terms/'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://play.google.com/store?hl=en&tab=w8> (referer: https://www.google.com/)
+2021-01-10 22:05:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://docs.google.com/document/create?usp=docs_alc> from <GET https://docs.google.com/document/?usp=docs_alc>
+2021-01-10 22:05:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ads.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com%2F&rip=1&nojavascript=1&hl=en> from <GET https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ>
+2021-01-10 22:05:06 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://play.google.com/store?hl=en&tab=w8'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.google.com/topstories?tab=wn&hl=en-IN&gl=IN&ceid=IN:en> (referer: https://www.google.com/)
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ads.google.com/intl/en/home/> (referer: https://www.google.com/)
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.co.in/robots.txt> (referer: None)
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://about.google/robots.txt> (referer: None)
+2021-01-10 22:05:06 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://news.google.com/topstories?tab=wn&hl=en-IN&gl=IN&ceid=IN:en'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:06 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://ads.google.com/intl/en/home/'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com%2F&rip=1&nojavascript=1&hl=en> (referer: https://www.google.com/)
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://about.google/intl/en/> (referer: https://www.google.com/)
+2021-01-10 22:05:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/document/create?usp%3Ddocs_alc&followup=https://docs.google.com/document/create?usp%3Ddocs_alc&ltmpl=docs> from <GET https://docs.google.com/document/create?usp=docs_alc>
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.co.in/> (referer: https://www.google.com/)
+2021-01-10 22:05:06 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.google.com%2F&rip=1&nojavascript=1&hl=en'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:06 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://about.google/intl/en/'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:06 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://www.google.co.in/'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://calendar.google.com/calendar?tab=wc> from <GET https://www.google.com/calendar?tab=wc>
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://photos.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://calendar.google.com/robots.txt> (referer: None)
+2021-01-10 22:05:06 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://calendar.google.com/calendar?tab=wc>
+2021-01-10 22:05:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.google.com/photos/about/> from <GET https://photos.google.com/?tab=wq&pageId=none>
+2021-01-10 22:05:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&rip=1&nojavascript=1&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&service=wise&ltmpl=docs> from <GET https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/document/create?usp%3Ddocs_alc&followup=https://docs.google.com/document/create?usp%3Ddocs_alc&ltmpl=docs>
+2021-01-10 22:05:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com/photos/about/> (referer: https://www.google.com/)
+2021-01-10 22:05:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&rip=1&nojavascript=1&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&service=wise&ltmpl=docs> (referer: https://www.google.com/)
+2021-01-10 22:05:07 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://www.google.com/photos/about/'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:07 [scrapy.core.scraper] ERROR: Error processing {'url': 'https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&rip=1&nojavascript=1&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fcreate%3Fusp%3Ddocs_alc&service=wise&ltmpl=docs'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/Users/sujit_jaiwaliya/Documents/Django projects/data scraping/backend/scrapy_app/scrapy_app/pipelines.py", line 13, in process_item
+    f.write(item.get("text"))
+TypeError: write() argument must be str, not None
+2021-01-10 22:05:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-10 22:05:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 13,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 13,
+ 'downloader/request_bytes': 18324,
+ 'downloader/request_count': 39,
+ 'downloader/request_method_count/GET': 39,
+ 'downloader/response_bytes': 1639608,
+ 'downloader/response_count': 39,
+ 'downloader/response_status_count/200': 27,
+ 'downloader/response_status_count/301': 6,
+ 'downloader/response_status_count/302': 6,
+ 'elapsed_time_seconds': 3.607644,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 10, 22, 5, 7, 269043),
+ 'log_count/DEBUG': 58,
+ 'log_count/ERROR': 11,
+ 'log_count/INFO': 10,
+ 'memusage/max': 68374528,
+ 'memusage/startup': 68374528,
+ 'offsite/domains': 6,
+ 'offsite/filtered': 12,
+ 'request_depth_max': 1,
+ 'response_received_count': 25,
+ 'robotstxt/forbidden': 13,
+ 'robotstxt/request_count': 13,
+ 'robotstxt/response_count': 13,
+ 'robotstxt/response_status_count/200': 13,
+ 'scheduler/dequeued': 38,
+ 'scheduler/dequeued/memory': 38,
+ 'scheduler/enqueued': 38,
+ 'scheduler/enqueued/memory': 38,
+ 'start_time': datetime.datetime(2021, 1, 10, 22, 5, 3, 661399)}
+2021-01-10 22:05:07 [scrapy.core.engine] INFO: Spider closed (finished)

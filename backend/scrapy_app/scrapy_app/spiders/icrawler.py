@@ -1,31 +1,55 @@
-from lxml.html import parse
+# -*- coding: utf-8 -*-
 import scrapy
+from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import CrawlSpider, Rule
 from scrapy.http import HtmlResponse
+import scrapy
 from data_scraper.models import Blog
 
 
-class TheodoSpider(scrapy.Spider):
-    name = 'medium'
+class IcrawlerSpider(CrawlSpider):
+    name = 'icrawler'
     base_url = 'https://medium.com/tag/'
 
     def __init__(self, *args, **kwargs):
-        # tag = 'flutter'
-        # tag = 'data-science'
+        # We are going to pass these args from our django view.
+        # To make everything dynamic, we need to override them inside __init__ method
+        self.url = kwargs.get('url')
+        tag = kwargs.get("tag")
+        self.domain = kwargs.get('domain')
+        self.start_urls = [self.url]
+        self.allowed_domains = [self.domain]
 
-        self.tag = kwargs.get('tag')
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
         }
-        print("->start_requests ")
-        yield scrapy.http.Request(
-            self.base_url+self.tag,
+
+        print("........")
+        scrapy.http.Request(
+            self.base_url+tag,
             headers=headers,
             callback=self.parse
         )
 
+        IcrawlerSpider.rules = [
+           Rule(LinkExtractor(unique=True), callback='parse_item'),
+        ]
+        super(IcrawlerSpider, self).__init__(*args, **kwargs)
+
+    def parse_item(self, response):
+        # You can tweak each crawled page here
+        # Don't forget to return an object.
+        i = {}
+        i['url'] = response.url
+        return i
+
+
     def parse(self, response: HtmlResponse):
+        with open("filemanrdasa.txt","w+") as f:
+            f.write("aya")
+            
         SET_SELECTOR = '.streamItem'
-        print("parse")
+        print("****")
         for article in response.css(SET_SELECTOR):
             data = article.css('a ::text').extract()
             read_time = article.css(
@@ -38,7 +62,6 @@ class TheodoSpider(scrapy.Spider):
             #     nor = '0 responses'
 
             # item = BlogItem()
-            
             # item['name '] = data[0]
             # item['date '] = data[2]
             # item['title '] = data[3]

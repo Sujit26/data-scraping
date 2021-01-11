@@ -38,9 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'mediumScrapper.data_scraper',
+    'data_scraper',
     'corsheaders',
+    'channels',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -71,8 +77,26 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mediumScrapper.wsgi.application'
 CORS_ORIGIN_ALLOW_ALL = True
+
+# things need to add
+
+ASGI_APPLICATION = "mediumScrapper.asgi.application"
+WSGI_APPLICATION = 'mediumScrapper.wsgi.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        # 'BACKEND': 'asgi_redis.RedisChannelLayer',
+        "BACKEND": "channels.layers.InMemoryChannelLayer",
+        # 'CONFIG': {
+        #     'hosts': [('localhost', 8000)],
+        # },
+        'ROUTING': 'mediumScrapper.routing.channel_routing',
+
+    }
+}
+
+
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
