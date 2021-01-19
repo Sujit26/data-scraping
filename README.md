@@ -1,8 +1,9 @@
 # Data Scraping of medium.com
 
 
-Command to run:
+Command to run:  
 Clone the project
+Open terminal in cloned directory 
 ## Activate virtual environment
 
   python3 -m venv env  
